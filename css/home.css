@@ -1,0 +1,58 @@
+#name {
+    font-size: 2.9rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+.data-list {
+    margin-top: 20px;
+    list-style: none;
+}
+.data {
+    max-width: 300px;
+    border: 1px solid #0088cc;
+    border-radius: 5px;
+    padding: 12px;
+    margin: 8px;
+    font-size: 18px;
+    text-align: center;
+}
+.data-content {
+    color: #6a6a6a;
+}
+.message {
+    opacity: 0.8;
+    max-width: 300px;
+    text-align: center;
+    margin-top: 5px;
+}
+#calendar {
+    top: 10px;
+    width: auto;
+    max-width: 600px;
+    height: auto;
+    max-height: 600px;
+    margin: 0px 15px 30px 15px;
+}
+.board {
+    border: 2px solid #0088cc;
+    border-radius: 5px;
+    margin-top: 20px; 
+}
+.board > span {
+    border-bottom: 1px solid #cecece;
+    padding: 8px;
+    font-size: 18px;
+    text-align: center;
+}
+.board > span:last-child {
+    border-bottom: none !important;
+}
+.version > span {
+    padding: 5px;
+}
+#home, #registers {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 80px;
+}

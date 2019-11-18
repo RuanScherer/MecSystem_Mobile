@@ -1,0 +1,79 @@
+#home {
+    animation-name: fade;
+    animation-duration: 1.2s;
+}
+.local-container {
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    padding: 0.5rem !important;
+}
+h1{
+    font-size: 26px;
+}
+#info {
+    color: #f93b52;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+#form {
+    padding: 0;
+    margin: 0;
+}
+
+/*FORMULÁRIO*/
+.form {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.login-input {
+    width: 100% !important;
+    margin-top: 0 !important;
+    font-size: 2rem !important;
+    text-align: left !important;
+    background-color: transparent;
+}
+img {
+    width: 80px;
+    margin-bottom: 6px;
+}
+.validate-error {
+    animation-name: nono;
+    animation-duration: 0.3s;
+    animation-iteration-count: 2;
+}
+a {
+    font-size: 16px;
+    position: fixed;
+    bottom: 40px;
+    visibility: hidden !important;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes nono {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    35% {
+        transform: translateX(-6px);
+    }
+    70% {
+        transform: translateX(6px);
+    }
+}

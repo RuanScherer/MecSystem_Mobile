@@ -1,0 +1,35 @@
+:root {
+    background-color: #08c;
+}
+* {
+    color: #fff;
+    text-align: center;
+}
+h1 {
+    font-weight: bold !important;
+}
+img {
+    max-width: 80% !important;
+    border-radius:8px;
+    box-shadow: 0px 2px 8px #333;
+}
+a {
+    border: 1px solid #fff !important;
+    border-radius: 8px !important;
+    color: #fff !important;
+    margin: 1em 0 !important;
+}
+a:active {
+    animation: click 0.4s;
+}
+
+@keyframes click {
+    0% {
+        transform: scale(0.9);
+        background-color: #fff;
+        color: #08C;
+    }
+    100% {
+        transform: scale(1);
+    }
+}

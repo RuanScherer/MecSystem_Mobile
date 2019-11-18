@@ -1,0 +1,22 @@
+#title {
+    margin-top: 50px;
+}
+#name {
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: center;
+}
+#name > * {
+    margin: 2px;
+}
+#function {
+    color: #808080;
+    font-size: 16px;
+}
+#calendar {
+    width: auto;
+    max-width: 600px;
+    height: auto;
+    max-height: 600px;
+    margin: 30px 15px;
+}

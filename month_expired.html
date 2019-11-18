@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="pragma" content="no-cache">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie-edge"/>
+        <link rel="stylesheet" href="css/all.css?version=12">
+        <link rel="stylesheet" href="css/connection_error.css?version=12">
+        <LINK REL="SHORTCUT ICON" href="images/Logo-MecSystem.png">
+        <script src="scripts/jquery.js"></script>
+        <title>Ops!</title>
+    </head>
+    <body>
+        <div class="local-container">
+            <div id="content" class="flex-center flex-column">
+                <h1 id="title">Algo não ocorreu como o esperado...</h1>
+                <h2 id="message">O prazo padrão para a sua revisão do relatório mensal de registro de ponto expirou. Entraremos em contato com você via email, fique atento a sua caixa de entrada.</h2>
+            </div>
+        </div>
+        <script>
+            $(document).ready(() => {
+                $('a:last').addClass('hidden');
+            });
+        </script>
+    </body>
+</html>

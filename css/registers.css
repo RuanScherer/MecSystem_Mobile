@@ -1,0 +1,78 @@
+#title {
+    margin-top: 50px
+}
+.tabless-content {
+    height: 100vh;
+}
+#message {
+    width: 21rem !important;
+    font-size: 1.2rem !important;
+}
+#date {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    color: #404040 !important;
+}
+.subtitle {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+.table {
+    border: 0.2rem solid #0088cc;
+    margin-bottom: 2rem;
+    border-radius: 0.8rem;
+}
+.header-title {
+    text-align: center;
+    padding: 0.8rem;
+    width: 10rem;
+    font-size: 1.8rem;
+    margin: 0;
+    border-bottom: 0.2rem solid #0088cc;
+}
+#left {
+    border-right: 0.1rem solid #0088cc;
+}
+#right {
+    border-left: 0.1rem solid #0088cc;
+}
+h4 {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 1rem;
+}
+h4:active {
+    background-color: #dfdfdf;
+}
+.manual {
+    color: #e49a2a !important;
+}
+.tip-box {
+    margin-top: 8px;
+    border: 1px solid #08c;
+    width: 75%;
+    max-width: 500px;
+    padding: 7px;
+    border-radius: 8px;
+}
+.tip-box h2 {
+    margin-bottom: 2px;
+}
+.tip {
+    font-size: 15px;
+    text-align: center;
+    color: #404040;
+}
+.fadeout {
+    animation: fadeout 1s;
+}
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        display: none;
+    }
+}

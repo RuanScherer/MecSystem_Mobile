@@ -1,0 +1,112 @@
+* {
+    text-align: center;
+}
+.local-container {
+    align-items: flex-start !important;
+}
+#header {
+    width: 100%;
+    box-shadow: 0 2px 5px #c4c4c4;
+    padding: 8px;
+}
+#primary {
+    font-size: calc(23px + 1px);
+    font-weight: bold;
+}
+.info {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 8px;
+    border: 2px solid #08c;
+    border-radius: 8px;
+}
+.info * {
+    margin: 5px;
+    text-align: left !important;
+}
+.data {
+    color: #555 !important;
+    font-size: 16px;
+}
+.table-controller {
+    max-width: calc(100vw - 30px);
+    overflow-x: auto;
+}
+table {
+    margin-top: 8px;
+    border-collapse: collapse;
+}
+th, td {
+    font-size: 15px;
+    padding: 5px;
+}
+th {
+    font-weight: bold;
+    border-bottom: 1px solid #08c;
+}
+td {
+    color: #727272 !important;
+    border-bottom: 1px solid #cecece;
+}
+.decision > button {
+    margin: 0 5px;
+    padding: 6px;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 16px;
+}
+.decision > button:active {
+    outline: none;
+}
+#decline {
+    border: 1px solid #f21d1d;
+    color: #f21d1d;
+    cursor: pointer;
+}
+#decline:hover {
+    background-color: #f21d1d;
+    color: #fff;
+}
+#accept {
+    border: 1px solid #16bd09;
+    color: #16bd09;
+    cursor: pointer;
+}
+#accept:hover {
+    background-color: #16bd09;
+    color: #fff;
+}
+.manual, #tip {
+    color: #e49a2a !important;
+}
+#tip {
+    margin: 15px 0;
+    font-size: 16px;
+}
+form {
+    width: 100%;
+}
+input {
+    width: 80% !important;
+    max-width: 300px;
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+    font-size: 17px !important;
+    padding: 8px !important;
+}
+.popup-button:hover {
+    background-color: #08c !important;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+.popup-content {
+    position: relative;
+}
+.popup-content > img {
+    width: 30px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}

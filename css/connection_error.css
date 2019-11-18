@@ -1,0 +1,18 @@
+.local-container {
+    width: 100vw; /* cada vw é correspondente a 1% do width do viewport */
+    height: 100vh; /* cada vw é correspondente a 1% do height do viewport */
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 0;
+    justify-content: center;
+    display: flex;
+}
+#title {
+    font-size: 2.8rem;
+    margin-bottom: 3.5rem;
+}
+#message {
+    width: 80%;
+    font-size: 1.5rem;
+    text-align: center;
+}

@@ -1,0 +1,26 @@
+#title {
+    margin-top: 50px
+}
+.label {
+    font-size: 1.8rem;
+    color: rgba(0, 136, 204, 0.8) !important;
+    text-align: center;
+}
+.data {
+    font-size: 2rem;
+    color: #707070 !important;
+    text-align: center;
+}
+.spaced {
+    margin-top: 10px;
+}
+.box {
+    border: 0.1rem solid #0088cc;
+    border-radius: 0.8rem;
+    width: 70%;
+    padding: 1rem;
+    background-color: #e5f6ff;
+}
+#name {
+    margin-bottom: 1.5rem;
+}
