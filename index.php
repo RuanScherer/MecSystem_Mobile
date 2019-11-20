@@ -1,9 +1,3 @@
-<?php
-    session_start();
-    if(isset($_SESSION['codUser'])) {
-        echo "<script>window.history.back(-1);</script>";
-    }
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
