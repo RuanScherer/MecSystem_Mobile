@@ -11,12 +11,15 @@
     $sqlCompany = "select CompanyName from tb_company where idtb_company = 1";
     $resCompany = mysqli_query($connection, $sqlCompany);
     $sql = "select EntryHour, LunchBreak, LunchReturn, DepartureTime, Date, EntryHourManual, LunchBreakManual, 
-	LunchReturnManual, DepartureTimeManual, UserName, UserCpf
+    LunchReturnManual, DepartureTimeManual
     from tb_point
     inner join tb_user
     on fk_employee = idtb_user
     where UserEmail = '".$_GET['email']."' and month(Date) = '".$_GET['month']."' and year(Date) = '".$_GET['year']."';";
     $res = mysqli_query($connection, $sql);
+    $sqlUserData = "select UserName, UserCpf from tb_user
+    where UserEmail = '".$_GET['email']."';";
+    $resUserData = mysqli_query($connection, $sqlUserData);
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -66,15 +69,15 @@
                 </span>
             </div>
             <div class="flex-column flex-center" style="padding: 15px">
-                <?php
-                    while($row = mysqli_fetch_assoc($res)) {
-                ?>
                 <h2>Dados Pessoais</h2>
                 <div class="info">
+                    <?php
+                        while($row = mysqli_fetch_assoc($resUserData)) {
+                    ?>
                     <h2 class="label">Nome do Funcionário</h2>
                     <h3 class="data"><?php echo utf8_encode($row['UserName']); ?></h3>
                     <h2 class="label">CPF</h2>
-                    <h3 class="data"><?php echo utf8_encode($row['UserCpf']); ?></h3>
+                    <h3 class="data"><?php echo utf8_encode($row['UserCpf']); }?></h3>
                 </div>
                 <h2>Relatório completo de registro de ponto do mês </h2>
                 <div class="table-controller">
@@ -88,6 +91,7 @@
                         </tr>
                         <tbody>
                             <?php
+                            while($row = mysqli_fetch_assoc($res)) {
                                 echo "
                                 <tr>
                                     <td>".date("d/m/y", strtotime($row['Date']))."</td>
@@ -105,11 +109,11 @@
                                     echo ">".$row['DepartureTime']."</td>
                                 </tr>
                                 ";
+                                }
                             ?>
                         </tbody>
                     </table>
                 </div>
-                <?php } ?>
                 <span id="tip">Registros inseridos manualmente por administradores estão
                 representados pela cor laranja.</span>
                 <div class="decision flex-row flex-center">
