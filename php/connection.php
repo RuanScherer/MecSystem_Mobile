@@ -1,7 +1,7 @@
 <?php
     $host = '157.245.83.188';
     $user = 'mecsystem';
-    $password = 'izidoro10cm';
+    $password = '123';
     $bd = 'BD_MecSystem';
     $connection = mysqli_connect($host, $user, $password, $bd);
 ?>
