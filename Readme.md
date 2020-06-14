@@ -1,4 +1,4 @@
-# Desafio Senior
+# MecSystem Mobile
 
 ## Visão Geral
 Esta é uma aplicação para visualizar registros de ponto eliminando o uso de papel.
